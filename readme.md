@@ -9,16 +9,16 @@ When a user login/register event occurs, the 3rd party service should generate a
 # Folder Structure
 ```yaml
 /src # project source files
-	/@classes # classes & reusables
-	/@models # object models/schema
-	/@services # project source services ( database, email, push, etc )
-	/@views # view definition classes
-	main.ts # project root
+    /@classes # classes & reusables
+    /@models # object models/schema
+    /@services # project source services ( database, email, push, etc )
+    /@views # view definition classes
+    main.ts # project root
 /config
-	default.json # default config file
-	/env # environment config (env files are merged with default on build)
-		development.json
-		production.json
+    default.json # default config file
+    /env # environment config (env files are merged with default on build)
+        development.json
+        production.json
 readme.md # this file
 package.json # node package sources
 rollup.config.js # build compiler (rollupjs) config
