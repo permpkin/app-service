@@ -1,0 +1,51 @@
+{
+	"tcp_port": 8000,
+	"ws_port": 8080,
+	"max_proc": -1,
+	"user": {
+		"max_connections": 1,
+		"max_subscriptions": 25,
+		"doc_limit": 10,
+		"doc_limit_max": 50
+	},
+	"mongo": {
+		"host": "mongodb://localhost/api_service"
+	},
+	"jwt": {
+		"secret": "ABC123"
+	},
+	"sendgrid": {
+		"api_token": "API_TOKEN",
+		"redis": "redis://127.0.0.1:6379"
+	},
+	"push": {
+		"redis": "redis://127.0.0.1:6379",
+		"options": {
+			"gcm": {
+				"id": null,
+				"phonegap": false
+			},
+			"apn": {
+				"token": {
+						"key": "./certs/key.p8",
+						"keyId": "ABCD",
+						"teamId": "TEAM_ID"
+				},
+				"production": false
+			},
+			"adm": {
+					"client_id": null,
+					"client_secret": null
+			},
+			"web": {
+					"vapidDetails": {
+							"subject": "<mailto Address or URL >",
+							"publicKey": "<URL Safe Base64 Encoded Public Key>",
+							"privateKey": "<URL Safe Base64 Encoded Private Key>"
+					},
+					"gcmAPIKey": "gcmkey",
+					"headers": {}
+			}
+		}
+	}
+}
